@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body>
     <h1>This is an HTML & CSS component library!</h1>
@@ -14,20 +15,20 @@
 
     <h2>Containers</h2>
 
-    <div>This is a fluid Container that extends till full width</div>
+    <div class="container">This is a fluid Container that extends till full width</div>
 
-    <div>This is a centered container that extends upto a certain width</div>
+    <div class="container container-center">This is a centered container that extends upto a certain width</div>
     <hr>
     <h2>links</h2>
-    <a href="/">link1</a>
-    <a href="/">link2</a>
+    <a href="/" class="link link-primary">link1</a>
+    <a href="/" class="link link-secondary">link2</a>
     <hr>
 
     <h2>lists</h2>
-    <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">one</li>
+        <li class="list-item-inline">two</li>
+        <li class="list-item-inline">three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
@@ -39,48 +40,58 @@
     <hr>
 
     <h2>nav</h2>
-    <nav>
-        <div>brandname</div>
-        <ul>
-            <li>
-                <a href="http://">one</a>
+    <nav class="navbar">
+        <div class="nav-brand">brandname</div>
+        <ul class="list-non-bullet nav-items">
+            <li class="list-item-inline">
+                <a class="link link-active" href="http://">navone</a>
             </li>
-            <li>
-                <a href="http://">two</a>
+            <li class="list-item-inline">
+                <a class="link" href="http://">navtwo</a>
             </li>
-            <li>
-                <a href="http://">three</a>
+            <li class="list-item-inline">
+                <a class="link" href="http://">navthree</a>
             </li>
         </ul>
     </nav>
     <hr>
 
     <h2>header</h2>
-    <header>
-        <img src="images/" alt="">
-        <h1>heading</h1>
+    <header class="hero">
+        <img  class="hero-img" src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="">
+        <h1 class="hero-heading">heading<span class="hero-sec-text"> secondary text</span></h1>
     </header>
     <hr>
 
     <h2>section</h2>
     
-    <section>
-        <h3>white section</h3>
-        <p>details abou this section</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>details about this section</p>
+        </div>
     </section>
 
-    <section>
-        <h3>grey section</h3>
-        <p>details abou this section</p>
+    <section class="section light-orange">
+        <div class="container container-center">
+            <h1>light orange section</h1>
+            <p>details about this section</p>
+        </div>
     </section>
     <hr>
 
-    <footer>
-        <h3>heading</h3>
-        <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+    <footer class="footer">
+        <h3 class="footer-heading">heading</h3>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">socialone</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">socialtwo</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">socialthree</a>
+            </li>
         </ul>
     </footer>
 
